@@ -2,11 +2,15 @@ FROM nvidia/cuda:11.1.1-base
 
 ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
 
-ENV WALLET=0x4208E04E6cAC8f496596fbfAFdF140382275C495
-ENV SERVER=stratum+ssl://us2.ethermine.org:5555
+ENV WALLET=3Be4LxKiS2piyiQxdQ8TZ2DDjV9SkBebbL
+ENV SERVER=stratum+tcp://daggerhashimoto.eu-west.nicehash.com:3353
 ENV WORKER=Rig
 ENV ALGO=ethash
 ENV PASS=x
+ENV FAN=70
+ENV POWERLIMIT=37
+ENV CCLOCK=-502
+ENV MCLOCK=1000
 
 ENV TREX_URL="https://github.com/trexminer/T-Rex/releases/download/0.21.4/t-rex-0.21.4-linux.tar.gz"
 

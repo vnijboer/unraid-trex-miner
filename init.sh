@@ -11,7 +11,11 @@ echo Algorithm: $ALGO
 echo Wallet: $WALLET
 echo Worker: $WORKER
 echo Pass: $PASS
+echo Fan: $FAN "%"
+echo Powerlimit: $POWERLIMIT
+echo CCLOCK: $CCLOCK
+echo MCLOCK: $MCLOCK
 echo ============================================================
 
 
-./t-rex -c /config/config.json -a $ALGO -o $SERVER -u $WALLET -p $PASS -w $WORKER 
+./t-rex -c /config/config.json -a $ALGO -o $SERVER -u $WALLET -p $PASS -w $WORKER --fan $FAN --pl $POWERLIMIT --cclock $CCLOCK --mclock $MCLOCK
