@@ -1,8 +1,5 @@
 # T-Rex Miner Nvidia Docker
 
-![Publish Docker image](https://github.com/PTRFRLL/nv-docker-trex/workflows/Publish%20Docker%20image/badge.svg)
-[![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0x4208E04E6cAC8f496596fbfAFdF140382275C495)](https://en.cryptobadges.io/donate/0x4208E04E6cAC8f496596fbfAFdF140382275C495)
-
 > Mine ethash (and others) on docker/nvidia-docker
 
 ## About
