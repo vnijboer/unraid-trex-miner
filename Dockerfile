@@ -16,13 +16,13 @@ ENV TREX_URL="https://github.com/trexminer/T-Rex/releases/download/0.21.4/t-rex-
 
 ADD config/config.json /home/nobody/
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    wget \
-    && rm -rf /var/lib/apt/lists/* \
-    && mkdir /trex \
-    && wget --no-check-certificate $TREX_URL \
-    && tar -xvf ./*.tar.gz  -C /trex \
-    && rm *.tar.gz
+RUN apt-get update && apt-get install -y --no-install-recommends wget
+RUN rm -rf /var/lib/apt/lists/*
+RUN mkdir /trex
+WORKDIR /trex
+RUN wget --no-check-certificate $TREX_URL
+RUN tar -xvf ./*.tar.gz  -C /trex
+RUN rm *.tar.gz
 
 WORKDIR /trex
 
