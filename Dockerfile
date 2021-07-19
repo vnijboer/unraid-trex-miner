@@ -16,8 +16,8 @@ ENV TREX_URL="https://github.com/trexminer/T-Rex/releases/download/0.21.4/t-rex-
 
 ADD config/config.json /home/nobody/
 
-RUN apt-get update
-RUN apt-get install -y --no-install-recommends wget
+RUN apt update
+RUN apt install -y --no-install-recommends wget
 RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir /trex
 WORKDIR /trex
