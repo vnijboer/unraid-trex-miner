@@ -18,4 +18,4 @@ echo MCLOCK: $MCLOCK
 echo ============================================================
 
 
-./t-rex -c /config/config.json -a $ALGO -o $SERVER -u $WALLET -p $PASS -w $WORKER --fan $FAN --pl $POWERLIMIT --cclock $CCLOCK --mclock $MCLOCK
+./t-rex -c /config/config.json -a $ALGO -o $SERVER -u $WALLET -p $PASS -w $WORKER --pl $POWERLIMIT --cclock $CCLOCK --mclock $MCLOCK
