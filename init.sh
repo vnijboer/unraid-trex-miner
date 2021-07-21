@@ -11,7 +11,7 @@ echo Algorithm: $ALGO
 echo Wallet: $WALLET
 echo Worker: $WORKER
 echo Pass: $PASS
-echo Fan: $FAN "%"
+echo Fan: $FAN
 echo Powerlimit: $POWERLIMIT
 echo CCLOCK: $CCLOCK
 echo MCLOCK: $MCLOCK
